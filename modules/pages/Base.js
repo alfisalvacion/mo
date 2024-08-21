@@ -77,7 +77,7 @@ define([
             var _this = this,
                 template = 'pages/' + this._name;
 
-            this.view = new viewClass(this._$page, template);
+            this.view = new viewClass.default(this._$page, template);
             this.view.events.on(_.keys(viewHandlers).join(' '), function (e, data) {
                 var result = viewHandlers[e.type].call(_this, e, data);
 

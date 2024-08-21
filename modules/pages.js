@@ -17,7 +17,7 @@ define([
             viewClasses = {};
 
         _.each(keys, function (key, i) {
-            var pageClass = pagesContext(key),
+            var pageClass = pagesContext(key).default || pagesContext(key),
                 name = _.lowerFirst(key.replace('./', ''));
 
             pageClasses[name] = pageClass;
