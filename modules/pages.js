@@ -6,7 +6,7 @@ define([
     'jquery', './jqm', 'lodash',
     './pages/Base',
     './analytics'
-], function (config, $, $mobile, _, BasePage, analytics) {
+], function ({ config }, $, $mobile, _, BasePage, analytics) {
     var pages = {},
         // TODO => Config
         nonReturnablePages = [];

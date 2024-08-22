@@ -238,7 +238,7 @@ define([
 
         $pages.on('pagebeforeshow', function () {
             var $page = $(this),
-                pageLayout = $page.data('layouted') || 'main',
+                pageLayout = $page.data('layout') || 'main',
                 pageSkin = $page.data('skin') || 'light';
 
             if (currentLayout != pageLayout) {
