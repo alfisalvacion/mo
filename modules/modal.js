@@ -13,7 +13,7 @@ define([
             var modalClass = modalsContext(key),
                 name = key.split('/')[1];
 
-            views[name] = new modalClass();
+            views[name] = new modalClass.default();
         });
     }
 
